@@ -1257,6 +1257,310 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 font-size: 15px;
             }
         }
+
+        /* =========================
+           PERAPIAN DESKTOP / LAPTOP
+           Membuat halaman pas dalam tinggi layar
+        ========================= */
+        @media (min-width: 1051px) {
+            html, body {
+                height: 100%;
+                overflow: hidden;
+            }
+
+            .login-page,
+            .login-shell {
+                width: 100%;
+                height: 100vh;
+                height: 100svh;
+                min-height: 0;
+            }
+
+            .login-shell {
+                grid-template-columns: minmax(0, 52.2%) minmax(0, 47.8%);
+            }
+
+            .brand-side,
+            .form-side {
+                min-height: 0;
+                height: 100%;
+            }
+
+            .brand-content {
+                padding: clamp(22px, 4vh, 40px) 6.2% 0;
+            }
+
+            .logo-mark {
+                width: clamp(48px, 5vw, 66px);
+                height: clamp(52px, 5.4vw, 71px);
+            }
+
+            .brand-logo {
+                gap: clamp(12px, 1.5vw, 20px);
+            }
+
+            .cart-icon {
+                transform: scale(.86);
+                transform-origin: top left;
+                left: 19px;
+                top: 26px;
+            }
+
+            .brand-name {
+                font-size: clamp(30px, 2.7vw, 46px);
+            }
+
+            .brand-subtitle {
+                font-size: clamp(14px, 1.2vw, 19px);
+                margin-top: 7px;
+            }
+
+            .intro {
+                margin-top: clamp(28px, 5.5vh, 54px);
+                max-width: 590px;
+            }
+
+            .intro h1 {
+                font-size: clamp(32px, 3.05vw, 49px);
+                line-height: 1.12;
+                letter-spacing: -1.2px;
+            }
+
+            .intro-line {
+                margin-top: clamp(14px, 2vh, 22px);
+                width: 64px;
+                height: 4px;
+            }
+
+            .intro p {
+                margin-top: clamp(12px, 2vh, 18px);
+                font-size: clamp(13px, 1.08vw, 17px);
+                line-height: 1.55;
+                max-width: 500px;
+            }
+
+            .illustration {
+                bottom: 145px;
+                height: 255px;
+            }
+
+            .city {
+                bottom: 35px;
+                height: 175px;
+            }
+
+            .building {
+                bottom: 20px;
+                height: 175px;
+            }
+
+            .building-main {
+                height: 105px;
+            }
+
+            .building-window {
+                top: 45px;
+                height: 40px;
+            }
+
+            .building-door {
+                height: 58px;
+            }
+
+            .koperasi-sign {
+                top: 24px;
+                width: 118px;
+                height: 33px;
+                font-size: 13px;
+            }
+
+            .tree {
+                transform: scale(.82);
+                transform-origin: bottom;
+            }
+
+            .green-wave {
+                height: 190px;
+            }
+
+            .features {
+                bottom: clamp(18px, 3vh, 30px);
+                left: 6.2%;
+                right: 6.2%;
+                gap: clamp(12px, 1.8vw, 25px);
+            }
+
+            .feature-icon {
+                width: 44px;
+                height: 44px;
+                border-radius: 13px;
+                margin-bottom: 8px;
+            }
+
+            .feature h3 {
+                font-size: clamp(12px, 1.05vw, 15px);
+            }
+
+            .feature p {
+                margin-top: 5px;
+                font-size: clamp(11px, .88vw, 13px);
+                line-height: 1.4;
+            }
+
+            .form-side {
+                padding: 16px clamp(20px, 3.2vw, 48px);
+                overflow: hidden;
+            }
+
+            .login-card {
+                width: min(100%, 500px);
+                min-height: 0;
+                padding: clamp(22px, 3.5vh, 36px) clamp(24px, 3vw, 42px) 18px;
+                border-radius: 17px;
+            }
+
+            .lock-circle {
+                width: clamp(56px, 8vh, 70px);
+                height: clamp(56px, 8vh, 70px);
+                margin-bottom: 14px;
+            }
+
+            .login-heading h2 {
+                font-size: clamp(22px, 1.8vw, 28px);
+            }
+
+            .login-heading p {
+                margin-top: 7px;
+                font-size: 14px;
+            }
+
+            .login-form {
+                margin-top: clamp(18px, 3vh, 27px);
+            }
+
+            .form-group {
+                margin-bottom: clamp(12px, 2vh, 17px);
+            }
+
+            .form-label {
+                margin-bottom: 7px;
+                font-size: 14px;
+            }
+
+            .input {
+                height: clamp(43px, 6.3vh, 50px);
+                font-size: 14px;
+                padding-left: 50px;
+            }
+
+            .field-icon {
+                left: 15px;
+                transform: translateY(-50%) scale(.9);
+            }
+
+            .password-toggle {
+                right: 14px;
+                transform: translateY(-50%) scale(.9);
+            }
+
+            .remember {
+                font-size: 13px;
+                gap: 8px;
+            }
+
+            .remember input {
+                width: 17px;
+                height: 17px;
+            }
+
+            .login-button {
+                height: clamp(45px, 6.5vh, 51px);
+                margin-top: clamp(16px, 2.5vh, 22px);
+                font-size: 15px;
+            }
+
+            .copyright {
+                margin-top: clamp(16px, 2.8vh, 24px);
+                font-size: 12px;
+            }
+
+            .error-box {
+                margin-bottom: 12px;
+                padding: 9px 12px;
+                font-size: 13px;
+            }
+        }
+
+        /* Laptop dengan tinggi layar pendek */
+        @media (min-width: 1051px) and (max-height: 700px) {
+            .brand-content {
+                padding-top: 18px;
+            }
+
+            .intro {
+                margin-top: 22px;
+            }
+
+            .intro h1 {
+                font-size: clamp(29px, 2.7vw, 40px);
+            }
+
+            .intro p {
+                margin-top: 10px;
+                font-size: 12px;
+                line-height: 1.4;
+            }
+
+            .illustration {
+                bottom: 125px;
+                height: 205px;
+            }
+
+            .green-wave {
+                height: 160px;
+            }
+
+            .features {
+                bottom: 14px;
+            }
+
+            .feature p {
+                display: none;
+            }
+
+            .login-card {
+                padding-top: 17px;
+                padding-bottom: 14px;
+            }
+
+            .lock-circle {
+                width: 49px;
+                height: 49px;
+                margin-bottom: 10px;
+            }
+
+            .login-form {
+                margin-top: 14px;
+            }
+
+            .form-group {
+                margin-bottom: 10px;
+            }
+
+            .input {
+                height: 39px;
+            }
+
+            .login-button {
+                height: 41px;
+                margin-top: 12px;
+            }
+
+            .copyright {
+                margin-top: 12px;
+            }
+        }
+
     </style>
 </head>
 
